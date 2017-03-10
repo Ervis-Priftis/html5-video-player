@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Html5 Video Player</title>
-  </head>
-  <body>
-    <video src="videofile.ogg" autoplay poster="posterimage.jpg">
+<head>
+  <meta charset="utf-8">
+  <title>Html5 Video Player</title>
+</head>
+<body>
 
-    </video>
-  </body>
+  <div id="player">
+
+    <div id="video-container">
+      <video src="videos/sample.mp4" poster="images/thumbnail.png">
+      </video>
+
+    </div>
+
+    <div id="pbar-container">
+      <div id="pbar"></div>
+    </div>
+
+    <div id="buttons-container">
+      <img id="play-button" src="images/play.png" alt="">
+      <div id="time-field">
+        0:00 / 0:00
+      </div>
+      <img id="sound-button" src="images/sound.png" alt="">
+      <div id="sbar-container">
+        <div id="sbar"></div>
+      </div>
+      <img id="fullscreen-button" src="images/fullscreen.png" alt="">
+    </div>
+
+  </div>
+
+</body>
 </html>
