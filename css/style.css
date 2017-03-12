@@ -9,6 +9,9 @@
   lightblue: rgb(50, 170, 220);
 
 */
+body {
+  background-color: rgba(90, 94, 98, 0.76);
+}
 #player {
   background-color: rgb(30, 30, 30);
   display: inline-block;
