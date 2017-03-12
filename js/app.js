@@ -79,9 +79,11 @@ function muteOrUnmute() {
   if (!video.muted) {
     video.muted = true;
     soundButton.src = 'images/mute.png';
+    sbar.style.display = 'none';
   } else {
     video.muted = false;
     soundButton.src = 'images/sound.png';
+    sbar.style.display = 'block';
   }
 }
 
@@ -90,5 +92,11 @@ function changeVolume (ev) {
   var barWidth = window.getComputedStyle(sbarContainer).getPropertyValue('width');
   barWidth = parseFloat(barWidth.substr(0, barWidth.length - 2));
 
-  video.volume = (mouseX/width);
+  video.volume = (mouseX/barWidth);
+  sbar.style.width = (mouseX/barWidth) * 100 + '%';
+  video.muted = false;
+  soundButton.src = 'images/sound.png';
+  sbar.style.display = 'block';
+
+  console.log(video.volume);
 }
