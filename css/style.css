@@ -41,13 +41,15 @@ img, #pbar-container, #sbar-container {
   }
 
 #pbar-container {
-  margin-top: 2px;
-  width: 50%;
-  background-color: rgb(50, 170, 220);
+  margin-top: 3px;
+  padding-bottom: 2px;
+  background-color: rgb(70, 70, 70);
 }
   #pbar {
-    height: 5px;
-    width: 50%;
+    height: 7px;
+    width: 0%;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     background-color: rgb(50, 170, 220);
   }
 
@@ -78,6 +80,8 @@ img, #pbar-container, #sbar-container {
     #sbar {
       height: 100%;
       width: 50%;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
       background-color: rgb(50, 170, 220);
     }
   #fullscreen-button {
