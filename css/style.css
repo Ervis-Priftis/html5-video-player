@@ -48,8 +48,8 @@ img, #pbar-container, #sbar-container {
   #pbar {
     height: 7px;
     width: 0%;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    /*border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;*/
     background-color: rgb(50, 170, 220);
   }
 
